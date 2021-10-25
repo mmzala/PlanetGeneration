@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f131246d1c6257746a803b91e4861d3f, type: 3}
+  m_Name: Earth - Shape
+  m_EditorClassIdentifier: 
+  planetRadius: 3
+  noiseLayers:
+  - enabled: 1
+    useFirstLayerAsMask: 0
+    noiseSettings:
+      filterType: 0
+      simpleNoiseSettings:
+        numLayers: 3
+        strenght: 0.18
+        baseRoughness: 1.28
+        roughness: 1.67
+        persistance: 0.48
+        minValue: 0.88
+        center: {x: 0, y: 0, z: 0}
+      rigidNoiseSettings:
+        numLayers: 1
+        strenght: 1
+        baseRoughness: 1
+        roughness: 2
+        persistance: 0.5
+        minValue: 0
+        center: {x: 0, y: 0, z: 0}
+        wightMultiplier: 0.5
+  - enabled: 1
+    useFirstLayerAsMask: 1
+    noiseSettings:
+      filterType: 0
+      simpleNoiseSettings:
+        numLayers: 3
+        strenght: 0.37
+        baseRoughness: 0.29
+        roughness: 1.91
+        persistance: 0.93
+        minValue: 1.21
+        center: {x: 1.81, y: 0.63, z: 0}
+      rigidNoiseSettings:
+        numLayers: 1
+        strenght: 1
+        baseRoughness: 1
+        roughness: 2
+        persistance: 0.5
+        minValue: 0
+        center: {x: 0, y: 0, z: 0}
+        wightMultiplier: 0.5
+  - enabled: 1
+    useFirstLayerAsMask: 1
+    noiseSettings:
+      filterType: 1
+      simpleNoiseSettings:
+        numLayers: 1
+        strenght: 1
+        baseRoughness: 1
+        roughness: 2
+        persistance: 0.5
+        minValue: 0
+        center: {x: 0, y: 0, z: 0}
+      rigidNoiseSettings:
+        numLayers: 4
+        strenght: 0.97
+        baseRoughness: 1.74
+        roughness: 0.72
+        persistance: 0.5
+        minValue: 0
+        center: {x: 0, y: 0, z: 0}
+        wightMultiplier: 0.87
